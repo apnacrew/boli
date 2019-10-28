@@ -27,7 +27,7 @@
   "eslintConfig": {
     "extends": [
       "@meteorjs/eslint-config-meteor",
-      "plugin:vue/recommended"
+      "plugin:vue/strongly-recommended"
     ],
     "env": {
       "meteor": true
