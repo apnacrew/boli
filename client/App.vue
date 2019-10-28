@@ -5,7 +5,6 @@
 <script>
 import PageHome from './pages/PageHome.vue';
 
-console.log();
 export default {
   data() {
     return {
@@ -28,5 +27,9 @@ export default {
 
 html {
     font-size: 100%;
-  }
+}
+
+body {
+  margin: 0;
+}
 </style>
