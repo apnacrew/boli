@@ -7,5 +7,36 @@
   "dependencies": {
     "@babel/runtime": "^7.3.4",
     "meteor-node-stubs": "^0.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "babel-eslint": "^10.0.3",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-meteor": "^6.0.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@meteorjs/eslint-config-meteor",
+      "plugin:vue/recommended"
+    ],
+    "env": {
+      "meteor": true
+    }
+  },
+  "comments": {
+    "devDependencies": {
+      "eslint-plugin-jsx-a11y": "peer dependency for meteor-linting - @meteorjs/eslint-config-meteor",
+      "eslint-plugin-react": "peer dependency for meteor-linting - @meteorjs/eslint-config-meteor"
+    },
+    "env": {
+      "meteor": "makes sure eslint knows global variables for MeteorJS"
+    }
   }
 }

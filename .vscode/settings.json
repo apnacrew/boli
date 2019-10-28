@@ -1,0 +1,7 @@
+{
+  "vetur.validation.template": false,
+  "eslint.validate": ["vue", "javascript", "html"],
+  "eslint.autoFixOnSave": true,
+  "vetur.validation.style": false,
+  "vetur.validation.script": false,
+}
