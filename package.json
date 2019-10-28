@@ -6,7 +6,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.4",
-    "meteor-node-stubs": "^0.4.1"
+    "meteor-node-stubs": "^0.4.1",
+    "vue": "^2.6.10",
+    "vue-meteor-tracker": "^2.0.0-beta.5"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -31,6 +33,9 @@
     }
   },
   "comments": {
+    "dependencies": {
+      "vue-meteor-tracker": "integrate Meteor's data layer apis into Vue files"
+    },
     "devDependencies": {
       "eslint-plugin-jsx-a11y": "peer dependency for meteor-linting - @meteorjs/eslint-config-meteor",
       "eslint-plugin-react": "peer dependency for meteor-linting - @meteorjs/eslint-config-meteor"
