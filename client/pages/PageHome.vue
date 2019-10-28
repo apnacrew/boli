@@ -2,6 +2,7 @@
   <div>
     <p>Welcome to Boli: the richest collection of music history</p>
     <p>Explore what you love!</p>
+    <p><ui-button>Start</ui-button></p>
   </div>
 </template>
 

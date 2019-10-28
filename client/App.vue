@@ -18,9 +18,15 @@ export default {
 };
 </script>
 
-<style scoped>
-  p {
-    font-size: 2em;
-    text-align: center;
+<style>
+/* Recommended css overrides by https://github.com/JosephusPaye/Keen-UI */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
   }
 </style>

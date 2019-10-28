@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.4",
+    "keen-ui": "^1.2.0",
     "meteor-node-stubs": "^0.4.1",
     "vue": "^2.6.10",
     "vue-meteor-tracker": "^2.0.0-beta.5"
@@ -35,7 +36,8 @@
   },
   "comments": {
     "dependencies": {
-      "vue-meteor-tracker": "integrate Meteor's data layer apis into Vue files"
+      "vue-meteor-tracker": "integrate Meteor's data layer apis into Vue files",
+      "keen-ui": "ui library for basic vue components"
     },
     "devDependencies": {
       "eslint-plugin-jsx-a11y": "peer dependency for meteor-linting - @meteorjs/eslint-config-meteor",
