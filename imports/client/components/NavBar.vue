@@ -10,7 +10,7 @@
       About
     </ui-button>
     <ui-button class="nav-item">
-      Account
+      <ui-icon icon="watch" />Account
     </ui-button>
   </div>
 </template>

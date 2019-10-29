@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import PageHome from './pages/PageHome.vue';
+import PageHome from '../pages/PageHome.vue';
 
 export default {
   data() {
