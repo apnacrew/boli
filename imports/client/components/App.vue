@@ -1,6 +1,8 @@
 <template>
   <v-app id="app">
-    <layout-main />
+    <component :is="layout">
+      <router-view />
+    </component>
   </v-app>
 </template>
 
@@ -10,6 +12,11 @@ import LayoutMain from '../layouts/LayoutMain.vue';
 export default {
   components: {
     LayoutMain,
+  },
+  computed: {
+    layout() {
+      return this.$route.meta.layout || 'LayoutMain';
+    },
   },
 };
 </script>
