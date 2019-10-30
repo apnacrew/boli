@@ -25,7 +25,8 @@
     "eslint-plugin-meteor": "^6.0.0",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "eslint-plugin-vue": "^5.2.3"
+    "eslint-plugin-vue": "^5.2.3",
+    "lorem-ipsum": "^2.0.3"
   },
   "eslintConfig": {
     "extends": [
