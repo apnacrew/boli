@@ -1,29 +1,35 @@
 <template>
-  <div class="nav">
-    <ui-button class="nav-item">
-      Home
-    </ui-button>
-    <ui-button class="nav-item">
-      Community
-    </ui-button>
-    <ui-button class="nav-item">
-      About
-    </ui-button>
-    <ui-button class="nav-item">
-      <ui-icon icon="watch" />Account
-    </ui-button>
-  </div>
+  <v-bottom-navigation
+    style="box-shadow: none"
+    elevation-0
+    shift
+  >
+    <v-btn>
+      <span>Home</span>
+      <v-icon>
+        fa-home
+      </v-icon>
+    </v-btn>
+
+    <v-btn>
+      <span>Songs</span>
+      <v-icon>fa-music</v-icon>
+    </v-btn>
+
+    <v-btn>
+      <span>Artists</span>
+      <v-icon>fa-headset</v-icon>
+    </v-btn>
+
+    <v-btn>
+      <span>Community</span>
+      <v-icon>fab fa-forumbee</v-icon>
+    </v-btn>
+  </v-bottom-navigation>
 </template>
+
 <script>
 export default {
   name: 'NavBar',
 };
 </script>
-<style scoped>
-.nav {
-  text-align: right;
-}
-.nav-item {
-  height: 4rem;
-}
-</style>

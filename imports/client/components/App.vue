@@ -1,33 +1,20 @@
 <template>
-  <page-home />
+  <v-app id="app">
+    <layout-main />
+  </v-app>
 </template>
 
 <script>
-import PageHome from '../pages/PageHome.vue';
+import LayoutMain from '../layouts/LayoutMain.vue';
 
 export default {
-  data() {
-    return {
-      date: new Date(),
-    };
-  },
   components: {
-    PageHome,
+    LayoutMain,
   },
 };
 </script>
 
 <style>
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 100%;
-}
-
 body {
   margin: 0;
 }
