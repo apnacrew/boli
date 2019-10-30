@@ -18,7 +18,6 @@ export default {
 </script>
 
 <style>
-/* Recommended css overrides by https://github.com/JosephusPaye/Keen-UI */
 *,
 *::before,
 *::after {

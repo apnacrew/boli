@@ -38,7 +38,7 @@
   "comments": {
     "dependencies": {
       "vue-meteor-tracker": "integrate Meteor's data layer apis into Vue files",
-      "keen-ui": "ui library for basic vue components"
+      "vuetify": "ui library for basic vue components"
     },
     "devDependencies": {
       "eslint-plugin-jsx-a11y": "peer dependency for meteor-linting - @meteorjs/eslint-config-meteor",
