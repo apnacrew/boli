@@ -1,29 +1,17 @@
 <template>
   <v-bottom-navigation
     style="box-shadow: none"
-    elevation-0
     shift
   >
-    <v-btn>
-      <span>Home</span>
+    <v-btn
+      v-for="item in items"
+      :key="item.path"
+      :to="item.path"
+    >
+      <span>{{ item.text }}</span>
       <v-icon>
-        fa-home
+        {{ item.icon }}
       </v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Songs</span>
-      <v-icon>fa-music</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Artists</span>
-      <v-icon>fa-headset</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Community</span>
-      <v-icon>fab fa-forumbee</v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>
@@ -31,5 +19,17 @@
 <script>
 export default {
   name: 'NavBar',
+  props: {
+    items: {
+      type: Array,
+      default() {
+        return [{
+          text: 'Home',
+          path: '/home',
+          icon: 'fa-home',
+        }];
+      },
+    },
+  },
 };
 </script>

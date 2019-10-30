@@ -11,7 +11,7 @@
         </div>
       </v-col>
       <v-col>
-        <nav-bar />
+        <nav-bar :items="navLinks" />
       </v-col>
       <v-col
         :cols="(12-navSize)/2"
@@ -35,6 +35,28 @@ export default {
   data() {
     return {
       navSize: 8,
+      navLinks: [
+        {
+          text: 'home',
+          path: '/home',
+          icon: 'fa-home',
+        },
+        {
+          text: 'Songs',
+          path: '/songs',
+          icon: 'fa-music',
+        },
+        {
+          text: 'Artists',
+          path: '/artists',
+          icon: 'fa-headset',
+        },
+        {
+          text: 'Community',
+          path: '/forum',
+          icon: 'fab fa-forumbee',
+        },
+      ],
     };
   },
   components: {
