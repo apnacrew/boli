@@ -56,6 +56,11 @@ export default {
           path: '/forum',
           icon: 'fab fa-forumbee',
         },
+        {
+          text: 'About',
+          path: '/about',
+          icon: 'fa-users',
+        },
       ],
     };
   },
