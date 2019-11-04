@@ -85,7 +85,6 @@
                             {{ line }}
                           </span>
                         </div>
-                        <!-- {{ loremIpsum({ count: 10 }) }} -->
                       </div>
                     </v-card>
                   </v-col>
@@ -129,7 +128,6 @@
 <script>
 import { Meteor } from 'meteor/meteor';
 import moment from 'moment';
-import { loremIpsum } from 'lorem-ipsum';
 
 export default {
   name: 'PageSong',
@@ -181,7 +179,6 @@ export default {
     });
   },
   methods: {
-    loremIpsum,
     setActiveLine(event) {
       this.activeLine = event.target.dataset.line;
     },
