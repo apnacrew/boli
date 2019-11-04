@@ -130,9 +130,9 @@ export default {
   },
   computed: {
     runtime() {
-      const sec = this.song.runtime % 60;
-      const min = (this.song.runtime - sec) / 60;
-      return `${min}:${sec}`;
+      return moment.utc(
+        moment.duration(this.song.runtime, 's').asMilliseconds(),
+      ).format('mm:ss');
     },
     releaseDate() {
       if (!this.song.release) return 'N/A';
