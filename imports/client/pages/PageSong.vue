@@ -77,8 +77,9 @@
                           :key="i"
                         >
                           <span
-                            @mouseover="setActiveLine"
                             :data-line="i"
+                            @mouseover="setActiveLine"
+                            @mouseleave="activeLine = null"
                             :class="{ highlight: i == activeLine }"
                           >
                             {{ line }}
@@ -104,8 +105,9 @@
                           :key="i"
                         >
                           <span
-                            @mouseover="setActiveLine"
                             :data-line="i"
+                            @mouseover="setActiveLine"
+                            @mouseleave="activeLine = null"
                             :class="{ highlight: i == activeLine }"
                           >
                             {{ line }}
