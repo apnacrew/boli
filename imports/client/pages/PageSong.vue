@@ -32,7 +32,7 @@
                   {{ song.artist }}
                 </v-card-subtitle>
               </v-img>
-              <v-card-text>
+              <v-card-text class="subtitle-1">
                 <div>
                   {{ song.description }}
                 </div>
@@ -40,7 +40,7 @@
                   class="meta flex-column"
                   wrap
                   dense
-                  style="max-height: 70px"
+                  style="max-height: 100px"
                 >
                   <v-col sm="2">
                     <span class="font-weight-bold">Runtime: </span>
