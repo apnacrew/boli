@@ -65,7 +65,7 @@
               </v-card-title>
               <v-card-text class="pb-0">
                 <v-row>
-                  <v-col>
+                  <v-col align="right">
                     <v-card flat>
                       <div class="font-weight-bold">
                         {{ song.lyrics.orig.lang }}
@@ -82,7 +82,10 @@
                       </div>
                     </v-card>
                   </v-col>
-                  <v-divider vertical />
+                  <v-divider
+                    vertical
+                    class="mx-10"
+                  />
                   <v-col>
                     <v-card flat>
                       <div class="font-weight-bold">
