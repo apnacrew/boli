@@ -18,7 +18,7 @@ export default [
     component: PageSongs,
   },
   {
-    path: '/song/:id',
+    path: '/songs/:id',
     component: Song,
   },
   {
