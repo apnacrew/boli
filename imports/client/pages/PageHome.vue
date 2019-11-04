@@ -9,7 +9,7 @@
           <v-card
             outlined
             elevation="0"
-            class="pa-2 display-2"
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 2, units: 'words'}) }}
@@ -24,7 +24,7 @@
           <v-card
             outlined
             elevation="0"
-            class="pa-2 display-2"
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 3, units: 'words'}) }}
@@ -40,7 +40,7 @@
           <v-card
             outlined
             elevation="0"
-            class="pa-2 display-2"
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 2, units: 'words'}) }}
@@ -54,7 +54,7 @@
           <v-card
             outlined
             elevation="0"
-            class="pa-2 display-2"
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 3, units: 'words'}) }}
@@ -71,7 +71,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-simple-table>
+        <v-simple-table class="translucent-white">
           <template v-slot:default>
             <thead>
               <tr>
@@ -111,7 +111,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-simple-table>
+        <v-simple-table class="translucent-white">
           <template v-slot:default>
             <thead>
               <tr>
@@ -151,3 +151,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.translucent-white {
+  background-color: rgba(255,255,255,0.7)
+}
+</style>
