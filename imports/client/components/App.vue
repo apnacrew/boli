@@ -25,4 +25,7 @@ export default {
 body {
   margin: 0;
 }
+.translucent-white {
+  background-color: rgba(255,255,255,0.5) !important;
+}
 </style>
