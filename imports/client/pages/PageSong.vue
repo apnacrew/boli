@@ -76,7 +76,13 @@
                           v-for="(line, i) in song.lyrics.orig.lines"
                           :key="i"
                         >
-                          {{ line }}
+                          <span
+                            @mouseover="setActiveLine"
+                            :data-line="i"
+                            :class="{ highlight: i == activeLine }"
+                          >
+                            {{ line }}
+                          </span>
                         </div>
                         <!-- {{ loremIpsum({ count: 10 }) }} -->
                       </div>
@@ -97,7 +103,13 @@
                           v-for="(line, i) in song.lyrics.translated.lines"
                           :key="i"
                         >
-                          {{ line }}
+                          <span
+                            @mouseover="setActiveLine"
+                            :data-line="i"
+                            :class="{ highlight: i == activeLine }"
+                          >
+                            {{ line }}
+                          </span>
                         </div>
                       </div>
                     </v-card>
@@ -123,6 +135,7 @@ export default {
     return {
       loading: true,
       error: false,
+      activeLine: null,
       song: {
         name: '',
         artist: '',
@@ -167,6 +180,9 @@ export default {
   },
   methods: {
     loremIpsum,
+    setActiveLine(event) {
+      this.activeLine = event.target.dataset.line;
+    },
   },
 };
 </script>
@@ -174,5 +190,8 @@ export default {
 <style scoped>
 .lyrics-wrapper {
   font-size: 1.2rem;
+}
+.lyrics-wrapper .highlight {
+  background: antiquewhite;
 }
 </style>
