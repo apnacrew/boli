@@ -1,10 +1,18 @@
 <template>
-  <div>
-    <HeaderBar />
-    <v-content>
-      <slot />
-    </v-content>
-  </div>
+  <v-card
+    flat
+    tile
+  >
+    <v-img
+      src="/images/background.jpg"
+      aspect-ratio="1.5"
+    >
+      <HeaderBar />
+      <v-content>
+        <slot />
+      </v-content>
+    </v-img>
+  </v-card>
 </template>
 
 <script>
