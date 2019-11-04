@@ -8,7 +8,8 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
+            flat
+            tile
             class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
@@ -23,7 +24,8 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
+            flat
+            tile
             class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
@@ -39,7 +41,8 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
+            flat
+            tile
             class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
@@ -53,7 +56,8 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
+            flat
+            tile
             class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
@@ -154,6 +158,6 @@ export default {
 
 <style scoped>
 .translucent-white {
-  background-color: rgba(255,255,255,0.7)
+  background-color: rgba(255,255,255,0.5)
 }
 </style>
