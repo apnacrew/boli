@@ -1,7 +1,8 @@
 <template>
   <v-bottom-navigation
-    style="box-shadow: none"
     shift
+    style="box-shadow: none"
+    background-color="rgba(255,255,255,0.2)"
   >
     <v-btn
       v-for="item in items"
