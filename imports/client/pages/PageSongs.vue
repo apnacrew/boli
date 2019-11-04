@@ -3,12 +3,13 @@
     <v-row>
       <v-col cols="12">
         <v-card
-          color="grey lighten-4"
           elevation="1"
+          color="rgba(0,0,0,0)"
         >
           <v-toolbar
             dense
             elevation="0"
+            class="translucent-white"
           >
             <v-toolbar-title>Search for songs</v-toolbar-title>
             <v-spacer />
@@ -29,7 +30,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-simple-table>
+        <v-simple-table class="translucent-white">
           <template v-slot:default>
             <thead>
               <tr>
