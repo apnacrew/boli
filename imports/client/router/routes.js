@@ -1,7 +1,7 @@
 import PageHome from '../pages/PageHome.vue';
 import PageAbout from '../pages/PageAbout.vue';
 import PageSongs from '../pages/PageSongs.vue';
-import Song from '../pages/PageSong.vue';
+import PageSong from '../pages/PageSong.vue';
 import PageArtists from '../pages/PageArtists.vue';
 
 export default [
@@ -19,7 +19,7 @@ export default [
   },
   {
     path: '/songs/:id',
-    component: Song,
+    component: PageSong,
   },
   {
     path: '/artists',
