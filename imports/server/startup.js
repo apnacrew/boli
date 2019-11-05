@@ -9,6 +9,7 @@ Songs.upsert({
   release: new Date('22 Jul 2017'),
 }, {
   $set: {
+    rank: 1,
     description: 'Qismat is a punjabi romantic song illustrating the scarifices one makes in love in order to win a perpetual fight against one\'s destiny.',
     imageUrl: '/images/qismat-cover.jpg',
     lyrics: {
