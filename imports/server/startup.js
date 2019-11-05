@@ -7,6 +7,7 @@ Songs.remove({});
 const bulkOp = Songs.rawCollection().initializeUnorderedBulkOp();
 for (let i = 2; i <= 20; i++) {
   bulkOp.insert({
+    _id: new Mongo.ObjectID()._str,
     rank: i,
     ...generateSong(),
   });
