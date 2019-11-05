@@ -5,7 +5,6 @@
       align="center"
     >
       <v-col :cols="(12-navSize)/2">
-        <!-- <v-card>Boli</v-card> -->
         <div class="wrapper-title">
           <span class="title-text">Boli</span>
         </div>
