@@ -1,4 +1,16 @@
 import Songs from '../collections/songs';
+import { generateSong } from '../utils';
+
+// Fill collection with randomly generated song list
+  Songs.remove({});
+  const bulkOp = Songs.rawCollection().initializeUnorderedBulkOp();
+  for (let i = 2; i <= 20; i++) {
+    bulkOp.insert({
+      rank: i,
+      ...generateSong(),
+    });
+  }
+  bulkOp.execute();
 
 // Insert a default song in db
 Songs.upsert({
