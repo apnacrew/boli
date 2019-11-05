@@ -2,6 +2,7 @@ import './publications';
 import Songs from '../collections/songs';
 import { randNum, generateSong } from '../utils';
 
+// TODO: remove this when new songs feeding api gets implemented.
 // Fill collection with randomly generated song list
 Songs.remove({});
 const bulkOp = Songs.rawCollection().initializeUnorderedBulkOp();
