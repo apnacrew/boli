@@ -1,4 +1,19 @@
+import './publications';
 import Songs from '../collections/songs';
+import { randNum, generateSong } from '../utils';
+
+// TODO: remove this when new songs feeding api gets implemented.
+// Fill collection with randomly generated song list
+Songs.remove({});
+const bulkOp = Songs.rawCollection().initializeUnorderedBulkOp();
+for (let i = 2; i <= 20; i++) {
+  bulkOp.insert({
+    _id: new Mongo.ObjectID()._str,
+    rank: i,
+    ...generateSong({ numLines: randNum(40, 70) }),
+  });
+}
+bulkOp.execute();
 
 // Insert a default song in db
 Songs.upsert({
@@ -9,6 +24,7 @@ Songs.upsert({
   release: new Date('22 Jul 2017'),
 }, {
   $set: {
+    rank: 1,
     description: 'Qismat is a punjabi romantic song illustrating the scarifices one makes in love in order to win a perpetual fight against one\'s destiny.',
     imageUrl: '/images/qismat-cover.jpg',
     lyrics: {
