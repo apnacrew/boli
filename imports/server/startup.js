@@ -1,6 +1,6 @@
 import './publications';
 import Songs from '../collections/songs';
-import { generateSong } from '../utils';
+import { randNum, generateSong } from '../utils';
 
 // Fill collection with randomly generated song list
 Songs.remove({});
@@ -9,7 +9,7 @@ for (let i = 2; i <= 20; i++) {
   bulkOp.insert({
     _id: new Mongo.ObjectID()._str,
     rank: i,
-    ...generateSong(),
+    ...generateSong({ numLines: randNum(40, 70) }),
   });
 }
 bulkOp.execute();
