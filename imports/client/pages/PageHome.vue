@@ -75,13 +75,13 @@
     </v-row>
     <song-list />
     <v-row justify="center">
-      <span class="display-1 font-weight-bold">Videos</span>
+      <span class="py-3 display-1 font-weight-bold">Videos</span>
     </v-row>
     <v-row justify="center">
-      <span class="display-3 font-weight-bold">...</span>
+      <span class="display-2">…</span>
     </v-row>
     <v-row justify="center">
-      <span class="display-1 font-weight-bold">Community</span>
+      <span class="py-3 display-1 font-weight-bold">Community</span>
     </v-row>
     <v-row>
       <v-col cols="12">
