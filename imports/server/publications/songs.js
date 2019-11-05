@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import Songs from '../../collections/songs';
 
-Meteor.publish('charts', function () {
+Meteor.publish('songList', function () {
   return Songs.find({},
     {
       sort: { rank: 1 },
