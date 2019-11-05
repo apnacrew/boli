@@ -8,8 +8,9 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
-            class="pa-2 display-2"
+            flat
+            tile
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 2, units: 'words'}) }}
@@ -23,8 +24,9 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
-            class="pa-2 display-2"
+            flat
+            tile
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 3, units: 'words'}) }}
@@ -39,8 +41,9 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
-            class="pa-2 display-2"
+            flat
+            tile
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 2, units: 'words'}) }}
@@ -53,8 +56,9 @@
         <v-row>
           <v-card
             outlined
-            elevation="0"
-            class="pa-2 display-2"
+            flat
+            tile
+            class="pa-2 display-2 translucent-white"
           >
             <v-card-title>
               {{ loremIpsum({ count: 3, units: 'words'}) }}
@@ -71,7 +75,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-simple-table>
+        <v-simple-table class="translucent-white">
           <template v-slot:default>
             <thead>
               <tr>
@@ -111,7 +115,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-simple-table>
+        <v-simple-table class="translucent-white">
           <template v-slot:default>
             <thead>
               <tr>

@@ -4,6 +4,7 @@
       tile
       flat
       :loading="loading"
+      color="rgba(255,255,255,0.5)"
     >
       <v-alert
         v-if="error"
@@ -14,10 +15,11 @@
       <!-- Song profile -->
       <template v-else>
         <v-row>
-          <v-col>
+          <v-col class="pt-0">
             <v-card
               flat
               tile
+              color="rgba(0,0,0,0)"
             >
               <v-img
                 :src="song.imageUrl"
@@ -30,7 +32,7 @@
                   {{ song.artist }}
                 </v-card-subtitle>
               </v-img>
-              <v-card-text>
+              <v-card-text class="subtitle-1">
                 <div>
                   {{ song.description }}
                 </div>
@@ -38,7 +40,7 @@
                   class="meta flex-column"
                   wrap
                   dense
-                  style="max-height: 70px"
+                  style="max-height: 100px"
                 >
                   <v-col sm="2">
                     <span class="font-weight-bold">Runtime: </span>
@@ -59,14 +61,20 @@
         </v-row>
         <v-row>
           <v-col>
-            <v-card flat>
+            <v-card
+              flat
+              color="rgba(0,0,0,0)"
+            >
               <v-card-title class="headline font-weight-bold">
                 Lyrics
               </v-card-title>
               <v-card-text class="pb-0">
                 <v-row>
                   <v-col align="right">
-                    <v-card flat>
+                    <v-card
+                      flat
+                      color="rgba(0,0,0,0)"
+                    >
                       <div class="font-weight-bold">
                         {{ song.lyrics.orig.lang }}
                       </div>
@@ -93,7 +101,10 @@
                     class="mx-10"
                   />
                   <v-col>
-                    <v-card flat>
+                    <v-card
+                      flat
+                      color="rgba(0,0,0,0)"
+                    >
                       <div class="font-weight-bold">
                         {{ song.lyrics.translated.lang }}
                       </div>
@@ -191,6 +202,6 @@ export default {
   font-size: 1.2rem;
 }
 .lyrics-wrapper .highlight {
-  background: antiquewhite;
+  background: navajowhite;
 }
 </style>
