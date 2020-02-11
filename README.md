@@ -38,7 +38,7 @@ You may use any operating system because the following instructions configure yo
 2. #### Set up development container
 
    * Download the meteor development image  
-    `docker pull lavneetp/meteor:latest`
+    `docker pull lavneetp/meteor:1.8.1`
 
    * Clone the repository  
     `git clone git@github.com:apnacrew/boli.git`
@@ -50,7 +50,7 @@ You may use any operating system because the following instructions configure yo
       -p 3000-3002:3000-3002 -p 9229:9229 \
       -v <PATH_TO_REPO>:/mnt/projects/boli \
       --name boli --hostname boli-dev \
-      lavneetp/meteor:latest
+      lavneetp/meteor:1.8.1
       ```
 
    * Create a development container on **Windows**  
@@ -68,7 +68,7 @@ You may use any operating system because the following instructions configure yo
       -p 3000-3002:3000-3002 -p 9229:9229 \
       -v <VOLUME_NAME>:/mnt/projects \
       --name boli --hostname boli-dev \
-      lavneetp/meteor:latest
+      lavneetp/meteor:1.8.1
       ```
 
     **Note**: When you restart your PC, you'll need to `docker start boli` to get the container running again.
