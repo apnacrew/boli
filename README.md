@@ -71,7 +71,7 @@ You may use any operating system because the following instructions configure yo
       lavneetp/meteor:1.8.1
       ```
 
-    **Note**: When you restart your PC, you'll need to `docker start boli` to get the container running again.
+    > **Note:** When you restart your PC, you'll need to `docker start boli` to get the container running again.
 
 3. #### Install npm dependencies
 
