@@ -25,4 +25,8 @@ export default [
     path: '/artists',
     component: PageArtists,
   },
+  {
+    path: '*',
+    redirect: '/home',
+  },
 ];
