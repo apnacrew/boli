@@ -31,7 +31,7 @@ Useful to have under your belt:
 
 ### Environment
 
-You may use any operating system because the following instructions configure your environment through docker, but prefer unix based systems because windows requires a nasty workaround (see steps below).
+You may use *any* operating system because the following instructions configure your environment through docker. However, note that Windows Subsystem for Linux (WSL) requires a nasty workaround (see steps below).
 
 1. #### Start by [installing docker](https://docs.docker.com/install/) if you haven't already
 
@@ -43,7 +43,7 @@ You may use any operating system because the following instructions configure yo
    * Clone the repository  
     `git clone git@github.com:apnacrew/boli.git`
 
-   * Create a development container on **Linux** or **Mac**
+   * Create a development container on **Linux** or **Mac**. Command format may differ on Windows.
 
       ```console
       docker run -itd \
@@ -53,7 +53,7 @@ You may use any operating system because the following instructions configure yo
       lavneetp/meteor:1.8.1
       ```
 
-   * Create a development container on **Windows**  
+   * Create a development container on **Windows Subsystem for Linux (WSL)**  
       Due to a [limitation](https://github.com/docker/for-win/issues/497) in Windows filesystem sharing protocol (samba), we run into file permission issues when configuring window's file paths as volume mounts using *Docker Desktop for Windows*. To resolve this, you'll need to:
        1. Create a docker volume to be shared between a utility and development container.
        2. Install `git` in the utility container.
